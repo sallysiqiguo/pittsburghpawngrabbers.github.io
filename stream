@@ -1,0 +1,19 @@
+div.a{
+    text-align:  left;
+}
+
+div.b{
+    text-align: right;
+}
+
+div.c{
+    text-align: left;
+}
+
+div.d{
+    text-align: right;
+}
+
+div.e{
+    text-align: left;
+}
