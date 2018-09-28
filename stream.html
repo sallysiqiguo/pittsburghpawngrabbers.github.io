@@ -28,6 +28,11 @@
     padding: 2em 2em 4em;
         }
         
+        .header{
+            float: none
+            text-align: center;
+        }
+        
         ul {
     list-style-type: none;
     margin: 0;
@@ -40,9 +45,6 @@ li {
     float: left;
 }
         
-        .img1{
-            text-align: center;
-        }
 
 li a {
     display: block;
@@ -53,7 +55,8 @@ li a {
 }
 
         h1{
-            text-align: center;
+            text-align: left;
+            font-size: 3em;
         }
         
         .column {
@@ -71,27 +74,45 @@ li a {
     </head>
     
     <body>
-    
+        
         
       <div>
         
-          <div class="img1"> <img src="cfzKlriE_400x400.jpg"> </div>
+        <div class="header">
+          <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+            </ul>
+        </div>
           
-        <h1>Stream</h1>
-        
-        <ul>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#about">About</a></li>
-        </ul>
+          <div class="img1">   <h1 font="72"><img src="Pawngrabbers%20Main.png" width="50" height="50"> Stream</h1></div>
+          
       </div>
+        
+        <hr>
         
       <div class="row">
           <div class="column">
+            <div>
               <h3>Livestream</h3>
+                
+                
+              <iframe
+               src="https://player.twitch.tv/?channel=shroud&muted=false"
+               height="400"
+               width="400"
+               frameborder="0"
+               scrolling="no"
+               allowfullscreen="true">
+            </iframe>
+                
+            </div>
               
+            <div>
               <h3>Streaming Schedule</h3>
+            </div>  
               
               <div>
                 <h3>Videos</h3>
@@ -102,9 +123,14 @@ li a {
           </div>
           
           <div class = "column">
-            <h3>Livechat</h3>
+            <div>
+              <h3>Livechat</h3>
+            </div>
               
-            <h3>Tournament Schedule</h3>
+            <div>
+              <h3>Tournament Schedule</h3>
+            </div>
+              
           </div>
       
       </div>
