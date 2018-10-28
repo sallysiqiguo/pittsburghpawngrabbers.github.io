@@ -4,13 +4,14 @@
 	<title>Home</title>
 </head>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="jquery-3.3.1.js"></script>
     
 
 <body>
 	<!-- top image -->
 	<div class="container">
 
-		<div id="header">
+		<div class="header">
 			<div id="top-logo">
 				<h1>
 				<div>
@@ -36,6 +37,21 @@
 			<div class = "clr"></div>
 		</div>
 
+		<script>
+			$(function() {
+    			var header = $(".header");
+    			$(window).scroll(function() {    
+        			var scroll = $(window).scrollTop();
+        			if (scroll >= 70) {
+            			header.addClass("scrolled");
+        		}   else {
+        				header.removeClass("scrolled");
+            	}
+    		});
+
+			});
+		</script>
+
 		<!-- ################### HEADER ENDS ##################-->
 
 
@@ -56,7 +72,6 @@
 				<img src="players/AlexanderShabalov.jpg" width="200" height="200">
 			</a>
 			<br>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
 		</div>
 
 		<div class="players">
@@ -65,7 +80,6 @@
 				<img src="players/AtulyaShetty.jpg" width="200" height="200">
 			</a>
 			<br>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
 		</div>
 
 		<div class="players">
@@ -74,7 +88,6 @@
 				<img src="players/AwonderLiang.jpg" width="200" height="200">
 			</a>
 			<br>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
 		</div>
 
 		<div class="players">
@@ -83,7 +96,6 @@
 				<img src="players/JenniferYu.jpg" width="200" height="200">
 			</a>
 			<br>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
 		</div>
 
 		<div class="players">
@@ -92,7 +104,6 @@
 				<img src="players/DavidItkin.jpg" width="200" height="200">
 			</a>
 			<br>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
 		</div>
 
 		<div class="players">
@@ -101,7 +112,6 @@
 				<img src="players/EdSong.jpg" width="200" height="200">
 			</a>
 			<br>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
 		</div>
         
         <div class="players">
@@ -110,7 +120,6 @@
 				<img src="players/GabrielPetesch.jpg" width="200" height="200">
 			</a>
 			<br>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
 		</div>
         
         <div class="players">
@@ -119,7 +128,6 @@
 				<img src="players/MarkHeimann.jpg" width="200" height="200">
 			</a>
 			<br>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
 		</div>
         
         <div class="players">
@@ -128,7 +136,6 @@
 				<img src="players/MikaBrattain.jpg" width="200" height="200">
 			</a>
 			<br>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
 		</div>
         
         <div class="players">
@@ -137,7 +144,6 @@
 				<img src="players/MinhLe.jpg" width="200" height="200">
 			</a>
 			<br>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
 		</div>
         
         <div class="players">
@@ -146,7 +152,6 @@
 				<img src="players/SafalBora.jpg" width="200" height="200">
 			</a>
 			<br>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
 		</div>
         
         <div class="about">
@@ -189,7 +194,7 @@
 			</div>
 
 			<div class="button">
-				<a href="#">
+				<a href="https://www.youtube.com/channel/UC0HxgtAm7xXKNN_zl5_hJLA">
 					<img src = "youtubelogo.png" width="30" height="30">
 				</a>
 			</div>

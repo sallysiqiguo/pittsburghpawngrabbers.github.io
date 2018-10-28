@@ -5,13 +5,14 @@
 	<title>Home</title>
 </head>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="jquery-3.3.1.js"></script>
+	
     
-
 <body>
 	<!-- top image -->
 	<div class="container">
 
-		<div id="header">
+		<div class="header">
 			<div id="top-logo">
 				<h1>
 				<div>
@@ -44,6 +45,21 @@
 			</div>
 			<div class = "clr"></div>
 		</div>
+
+		<script>
+			$(function() {
+    			var header = $(".header");
+    			$(window).scroll(function() {    
+        			var scroll = $(window).scrollTop();
+        			if (scroll >= 70) {
+            			header.addClass("scrolled");
+        		}   else {
+        				header.removeClass("scrolled");
+            	}
+    		});
+
+			});
+		</script>
 
 		<!-- ################### HEADER ENDS ##################-->
         
@@ -125,7 +141,6 @@
 	<div class="fixed">
 		<div class=socialmedia>
 
-
 			<div class="button">
 				<a href="https://www.facebook.com/PGHpawngrabbers/">
 					<img src = "facebooklogo.png" width="30" height="30">
@@ -145,7 +160,7 @@
 			</div>
 
 			<div class="button">
-				<a href="#">
+				<a href="https://www.youtube.com/channel/UC0HxgtAm7xXKNN_zl5_hJLA">
 					<img src = "youtubelogo.png" width="30" height="30">
 				</a>
 			</div>
