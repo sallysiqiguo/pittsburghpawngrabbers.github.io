@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        
+        <style>
+        
+        .dropbtn{
+    
+    background-color: lightgray;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+}
+
+.dropdown{
+    
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 10px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+.dropdown-content a:hover {background-color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: grey;}
+        </style>
+    </head>
+    <body>
+        
+         <div class="dropdown">
+                            <button class="dropbtn">Home
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="index.html"><strong>Home</strong></a>
+                                <a href="bio.html">Bios</a>
+                            </div>
+         </div>
+        
+    </body>
+</html>
