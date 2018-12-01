@@ -264,4 +264,102 @@ h2{
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+/* BLOG */
+
+.container-smaller-width{
+	width:95%;
+	margin:auto;
+	overflow:hidden;
+    background-color: #f4f4f4;
+}
+.leftcolumn { 
+  float: left;
+  width: 70%;
+  box-sizing:border-box;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 30%;
+  padding-left: 20px;
+  box-sizing:border-box;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #111;
+  width: 100%;
+  padding: 20px;
+  box-sizing:border-box;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  box-sizing:border-box;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  box-sizing:border-box;
+}
+
+ul.no-bullet{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li.pawn{
+	background: url(white-pawn.png) no-repeat left top;
+	height: 25px;
+	padding-left: 15px;
+}
+
+/* Footer */
+.center{
+	text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+    padding: 20px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    transition: background-color .3s;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* Make the blog responsive. When width<800, coluns collapse on each other */
+@media screen and (max-width: 500px) {
+  .leftcolumn, .rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+}
    
