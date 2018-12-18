@@ -4,7 +4,6 @@
 }
 
 
-
 body{
 	background-color:#555555;
     background: url(Profile.jpg);
@@ -74,6 +73,13 @@ a:hover{
 	width:80%;
 	transition:1s;
 }
+
+/*.big-image{
+    position:fixed;
+    overflow: hidden;
+    top:auto;
+    width:80%;
+}*/
 
 .scrolled{
 	background-color:darkgrey;
@@ -192,7 +198,7 @@ a:hover{
 
 
         
-ul {
+.header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -200,10 +206,14 @@ ul {
     background-color: #333;
 }
 
-li {
+.header li {
     float: left;
 }
         
+.t-schedule ul{
+    padding: 10px;
+}
+
 
 li a {
     display: block;
@@ -212,6 +222,8 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+
+
 
 h1{
     text-align: left;
