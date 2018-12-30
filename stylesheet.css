@@ -57,8 +57,8 @@ a:hover{
 
 /*there has to be a better way to do this */
 
-.button:hover{
-	background:black;
+.button img:hover{
+	/* background:black; */
 	color:#fff;
 	transform:scale(1.3);
 }
@@ -71,15 +71,20 @@ a:hover{
 	position:fixed;
 	top:0;
 	width:80%;
-	transition:1s;
+    transition:1s;
+    display: flex;
+    justify-content: space-between;
 }
 
-/*.big-image{
-    position:fixed;
-    overflow: hidden;
-    top:auto;
-    width:80%;
-}*/
+.cover-photo-div {
+    margin-top: 80px;
+    /* max-height: 324.26px; */
+}
+
+.cover-photo {
+    max-width: 100%;
+    display:block;
+}
 
 .scrolled{
 	background-color:darkgrey;
@@ -87,20 +92,27 @@ a:hover{
 }
 
 #top-logo{
-	float:left;
-	width:7%;
-	box-sizing:border-box;
-	padding:5px
+	/* float:left; */
+	/* width:7%; */
+	/* box-sizing:border-box; */
+    padding:5px;
+    display: inline-block;
 }
 
 #title-text{
 	padding-left:15px;
-	padding-top:18px;
-	float:left;
+	/* padding-top:18px; */
+	/* float:left; */
     font-family: post_no_bills_colombobold;
 	font-size:40px;
-	box-sizing:border-box;
-	color:black;
+	/* box-sizing:border-box; */
+    color:black;
+    display: inline-block;
+}
+
+.title-div {
+    display:flex;
+    align-items: center;
 }
 
 /*changing to class */
@@ -109,24 +121,29 @@ a:hover{
 	margin:0px;
 	height:80px;
 	width:37%;
-	float:right;
-	box-sizing:border-box;
+    /* float:right; */
+    box-sizing:border-box;
+    align-self: flex-end;
 }
 
 #nav-bar ul{
-	padding-top:20px;
-	list-style:none;
+    height: 100%;
+    list-style:none;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#nav-bar li{
+/* #nav-bar li{
 	display:inline;
 	padding-right:10px;
-}
+} */
 
 /*Format the links ONLY in navbar*/
 #nav-bar a{
 	font-size:18px;
-	padding-right:20px;
+	/* padding-right:20px; */
 }
 
 /*Formatting the players*/
@@ -142,7 +159,7 @@ a:hover{
 .playerImage{
 	max-width:100%;
 	height:auto;
-	text-align
+	/* text-align */
 }
 
 .fixed{
@@ -173,16 +190,16 @@ a:hover{
     text-align: center;
 }
 
-        .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
 }
 
  .header{
-            float: none
-            text-align: center;
-        }
+    float: none;
+    text-align: center;
+}
 
 .news h2{
     text-align: center
@@ -375,3 +392,8 @@ li.pawn{
   }
 }
    
+@media only screen and (min-width: 1280px) {
+    .container, .header {
+      width: 1024px;
+    }
+  }

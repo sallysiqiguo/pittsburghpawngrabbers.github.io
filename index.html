@@ -13,21 +13,19 @@
 	<div class="container">
 
 		<div class="header">
-			<div id="top-logo">
-				<h1>
-				<div>
-				<a href="#">
-					<img src="Pawngrabbers%20Main.png" width="50" height="50">
-				</a>
+			<div class="title-div">
+				<div id="top-logo">
+					<a href="#">
+						<img src="Pawngrabbers%20Main.png" width="50" height="50">
+					</a>
 				</div>
-				</h1>
+				<div id="title-text">Pittsburgh Pawngrabbers</div>
 			</div>
 
-			<div id="title-text">Pittsburgh Pawngrabbers</div>
 
 			<div id="nav-bar">
 				<ul>
-                    <li><a href="bio.html">Bios</a></li>
+					<li><a href="bio.html">Bios</a></li>
 					<!--<li>
                         <div class="dropdown">
                             <button class="dropbtn">Home</button>
@@ -39,34 +37,34 @@
                         </div>
                     </li>-->
 					<li><a href="stream2.html">Stream</a></li>
-					<li><a href="blog.html">Blog</a></li>
+					<li><a href="blog/blog.html">Blog</a></li>
 					<li><a href="https://shop.spreadshirt.com/pghpawngrabbers">Shop</a></li>
 				</ul>
 			</div>
-			<div class = "clr"></div>
+			<!-- <div class="clr"></div> -->
 		</div>
 
+		<!--comment -->
 		<script>
-			$(function() {
-    			var header = $(".header");
-    			$(window).scroll(function() {    
-        			var scroll = $(window).scrollTop();
-        			if (scroll >= 70) {
-            			header.addClass("scrolled");
-        		}   else {
-        				header.removeClass("scrolled");
-            	}
-    		});
+			$(function () {
+				var header = $(".header");
+				$(window).scroll(function () {
+					var scroll = $(window).scrollTop();
+					if (scroll >= 70) {
+						header.addClass("scrolled");
+					} else {
+						header.removeClass("scrolled");
+					}
+				});
 
 			});
 		</script>
 
 		<!-- ################### HEADER ENDS ##################-->
-        
-		<div style = "padding-bottom:70px"></div>
-		<div class ="big-image">
+
+		<div class="cover-photo-div">
 			<a href="#">
-				<img src="TwitchCoverPGH.jpg" alt="My Sample Image" width="1024" height="300">
+				<img class="cover-photo" src="TwitchCoverPGH.jpg" alt="Cover Photo">
 			</a>
 		</div>
         
@@ -143,31 +141,31 @@
 
 			<div class="button">
 				<a href="https://www.facebook.com/PGHpawngrabbers/">
-					<img src = "facebooklogo.png" width="30" height="30">
+					<img src = "facebooklogo.png" alt="Facebook" width="30" height="30">
 				</a>
 			</div>
 
 			<div class="button">
 				<a href="https://twitter.com/pghpawngrabbers?lang=en">
-					<img src = "twitterlogo.png" width="30" height="30">
+					<img src = "twitterlogo.png" alt="Twitter" width="30" height="30">
 				</a>
 			</div>
 
 			<div class="button">
 				<a href="https://www.twitch.tv/pghpawngrabbers">
-					<img src = "twitchlogo.png" width="30" height="30">
+					<img src = "twitchlogo.png" alt="Twitch" width="30" height="30">
 				</a>
 			</div>
 
 			<div class="button">
 				<a href="https://www.youtube.com/channel/UC0HxgtAm7xXKNN_zl5_hJLA">
-					<img src = "youtubelogo.png" width="30" height="30">
+					<img src = "youtubelogo.png" alt="Youtube" width="30" height="30">
 				</a>
 			</div>
             
             <div class="button">
 				<a href="https://www.instagram.com/pghpawngrabbers/">
-					<img src = "insta.png" width="30" height="30">
+					<img src = "insta.png" alt="Instagram" width="30" height="30">
 				</a>
 			</div>
 
