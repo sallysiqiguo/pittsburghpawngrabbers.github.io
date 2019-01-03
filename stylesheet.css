@@ -67,7 +67,8 @@ a:hover{
 /*Changing this to a class. Scolled class must go below header */
 .header{
 	overflow:hidden;
-	background-color:grey;
+    background-color:grey;
+    /* background-color:#333;  does this work???*/
 	position:fixed;
 	top:0;
 	width:80%;
@@ -99,7 +100,7 @@ a:hover{
     display: inline-block;
 }
 
-#title-text{
+#title-text a{
 	padding-left:15px;
 	/* padding-top:18px; */
 	/* float:left; */
