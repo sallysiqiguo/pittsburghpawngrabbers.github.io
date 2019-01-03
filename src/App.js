@@ -1,26 +1,44 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+import Home from './Home';
+import Bio from './Bio';
+import Stream from './Stream';
+import Blog from './Blog';
+
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/bio">Bio</Link>
+              </li>
+              <li>
+                <Link to="/stream">Stream</Link>
+              </li>
+              <li>
+                <Link to="/blog">Blog</Link>
+              </li>
+              <li>
+                <a href="https://shop.spreadshirt.com/pghpawngrabbers" target="_blank">Shop</a>
+              </li>
+            </ul>
+          </nav>
+
+          <Route path="/" exact component={() => (<Home />)} />
+          <Route path="/bio" component={() => (<Bio />)} />
+          <Route path="/stream" component={() => (<Stream />)} />
+          <Route path="/blog" component={() => (<Blog />)} />
+        </div>
+      </Router>
     );
   }
 }
