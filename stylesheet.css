@@ -66,7 +66,7 @@ a:hover{
 
 /*Changing this to a class. Scolled class must go below header */
 .header{
-	overflow:hidden;
+	/*overflow:hidden;*/
 	background-color:grey;
 	position:fixed;
 	top:0;
@@ -84,6 +84,7 @@ a:hover{
 .cover-photo {
     max-width: 100%;
     display:block;
+    z-index: 1;
 }
 
 .scrolled{
@@ -213,13 +214,11 @@ a:hover{
     text-align: center;
 }
 
-
-        
 .header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     background-color: #333;
 }
 
@@ -254,17 +253,19 @@ h2{
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
+    z-index: 9999;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
+    z-index: 9999;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -274,7 +275,7 @@ h2{
     background-color: #f1f1f1;
     min-width: 70px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 9999;
 }
 
 /* Links inside the dropdown */
@@ -283,24 +284,25 @@ h2{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    /*overflow:hidden;*/
+    z-index: 9999;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #ddd;}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: table-column;}
+.dropdown:hover .dropdown-content {display: table-column; z-index: 9999;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-
+/*.dropdown:hover .dropbtn {background-color: #3e8e41;}*/
 
 /* BLOG */
 
 .container-smaller-width{
 	width:95%;
 	margin:auto;
-	overflow:hidden;
+	/*overflow:hidden;*/
     background-color: #f4f4f4;
 }
 .leftcolumn { 
@@ -345,7 +347,7 @@ ul.no-bullet{
 	list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     background-color: white;
 }
 

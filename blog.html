@@ -13,60 +13,41 @@
 	<div class="container">
 
 		<div class="header">
-			<div id="top-logo">
-				<h1>
-				<div>
-				<a href="#">
-					<img src="Pawngrabbers%20Main.png" width="50" height="50">
-				</a>
+			<div class="title-div">
+				<div id="top-logo">
+					<a href="#">
+						<img src="Pawngrabbers%20Main.png" width="50" height="50">
+					</a>
 				</div>
-				</h1>
+				<div id="title-text">Pittsburgh Pawngrabbers</div>
 			</div>
 
-			<div id="title-text">Pittsburgh Pawngrabbers</div>
 
 			<div id="nav-bar">
 				<ul>
-                    <li><a href="bio.html">Bios</a></li>
-					<!--<li>
+					<li>
                         <div class="dropdown">
-                            <button class="dropbtn">Home</button>
+                            <button class="dropbtn"><a href="index.html">Home</a></button>
                                 <div class="dropdown-content">
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 2</a>
-                                    <a href="#">Link 3</a>
+                                    <a href="bio.html">Bios</a>
+                                    <a href="#">Sponsors</a>
+                                    <a href="#">IM Streamer</a>
                                 </div>
                         </div>
-                    </li>-->
+                    </li>
 					<li><a href="stream2.html">Stream</a></li>
 					<li><a href="blog.html">Blog</a></li>
 					<li><a href="https://shop.spreadshirt.com/pghpawngrabbers">Shop</a></li>
 				</ul>
 			</div>
-			<div class = "clr"></div>
+			<!-- <div class="clr"></div> -->
 		</div>
-
-		<script>
-			$(function() {
-    			var header = $(".header");
-    			$(window).scroll(function() {    
-        			var scroll = $(window).scrollTop();
-        			if (scroll >= 70) {
-            			header.addClass("scrolled");
-        		}   else {
-        				header.removeClass("scrolled");
-            	}
-    		});
-
-			});
-		</script>
 
 		<!-- ################### HEADER ENDS ##################-->
         
-		<div style = "padding-bottom:70px"></div>
-		<div class ="big-image">
+		<div class="cover-photo-div">
 			<a href="#">
-				<img src="TwitchCoverPGH.jpg" alt="My Sample Image" width="1024" height="300">
+				<img class="cover-photo" src="TwitchCoverPGH.jpg" alt="Cover Photo">
 			</a>
 		</div>
         

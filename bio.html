@@ -5,60 +5,46 @@
 </head>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<script src="jquery-3.3.1.js"></script>
-    
 
 <body>
 	<!-- top image -->
 	<div class="container">
 
 		<div class="header">
-			<div id="top-logo">
-				<h1>
-				<div>
-				<a href="#">
-					<img src="Pawngrabbers%20Main.png" width="50" height="50">
-				</a>
+			<div class="title-div">
+				<div id="top-logo">
+					<a href="#">
+						<img src="Pawngrabbers%20Main.png" width="50" height="50">
+					</a>
 				</div>
-				</h1>
+				<div id="title-text">Pittsburgh Pawngrabbers</div>
 			</div>
-
-			<div id="title-text">Pittsburgh Pawngrabbers</div>
 
 			<div id="nav-bar">
 				<ul>
 					<li>
-                        <a href="index.html"> Home </a>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a href="index.html">Home</a></button>
+                                <div class="dropdown-content">
+                                    <a href="bio.html">Bios</a>
+                                    <a href="#">Sponsors</a>
+                                    <a href="#">IM Streamer</a>
+                                </div>
+                        </div>
                     </li>
 					<li><a href="stream2.html">Stream</a></li>
 					<li><a href="blog.html">Blog</a></li>
 					<li><a href="https://shop.spreadshirt.com/pghpawngrabbers">Shop</a></li>
 				</ul>
 			</div>
-			<div class = "clr"></div>
+			<!-- <div class="clr"></div> -->
 		</div>
-
-		<script>
-			$(function() {
-    			var header = $(".header");
-    			$(window).scroll(function() {    
-        			var scroll = $(window).scrollTop();
-        			if (scroll >= 70) {
-            			header.addClass("scrolled");
-        		}   else {
-        				header.removeClass("scrolled");
-            	}
-    		});
-
-			});
-		</script>
 
 		<!-- ################### HEADER ENDS ##################-->
 
-
-		<div style = "padding-bottom:70px"></div>
-		<div class ="big-image">
+		<div class="cover-photo-div">
 			<a href="#">
-				<img src="TwitchCoverPGH.jpg" alt="My Sample Image" width="1024" height="300">
+				<img class="cover-photo" src="TwitchCoverPGH.jpg" alt="Cover Photo">
 			</a>
 		</div>
         
@@ -165,25 +151,17 @@
 		</div>
         
         
-        
-        
-        
-       
-        
         <div class="about">
             
             <div class="pad"></div>
             <h2>About</h2>
             <div class="pad"></div>
             
-            <p>We are the Pittsburgh Pawngrabbers! We are part of the Online Pro-Chess League.</p>
+            <p>Established in 2016, the Pittsburgh Pawngrabbers are one of the original PRO Chess League teams, and stands to promote chess in the Pittsburgh community, while also supporting the rapid development of chess as an esport. Entering its third season, the Pawngrabbers embrace their “underdog” reputation with one of the youngest teams in the league, backed by US Hall of Famer Grandmaster Alexander Shabalov and 15 year old American prodigy, Grandmaster Awonder Liang. This season, the Pawngrabbers look to build off a 2nd place regular season finish in the Atlantic Division with its first ever PRO Chess League title.</p>
         
         </div>
         
 	</div>
-    
-    
-
 
 	<!-- Creating the Social Media links. Must be outside the container -->
 

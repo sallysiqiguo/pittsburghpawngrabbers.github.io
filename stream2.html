@@ -12,51 +12,42 @@
 	<div class="container">
 
 		<div class="header">
-			<div id="top-logo">
-				<h1>
-				<div>
-				<a href="#">
-					<img src="Pawngrabbers%20Main.png" width="50" height="50">
-				</a>
+			<div class="title-div">
+				<div id="top-logo">
+					<a href="#">
+						<img src="Pawngrabbers%20Main.png" width="50" height="50">
+					</a>
 				</div>
-				</h1>
+				<div id="title-text">Pittsburgh Pawngrabbers</div>
 			</div>
 
-			<div id="title-text"> Pittsburgh Pawngrabbers</div>
 
 			<div id="nav-bar">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-                    <li><a href="stream2.html">Stream</a></li>
+					<li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a href="index.html">Home</a></button>
+                                <div class="dropdown-content">
+                                    <a href="bio.html">Bios</a>
+                                    <a href="#">Sponsors</a>
+                                    <a href="#">IM Streamer</a>
+                                </div>
+                        </div>
+                    </li>
+					<li><a href="stream2.html">Stream</a></li>
 					<li><a href="blog.html">Blog</a></li>
 					<li><a href="https://shop.spreadshirt.com/pghpawngrabbers">Shop</a></li>
 				</ul>
 			</div>
-			<div class = "clr"></div>
+			<!-- <div class="clr"></div> -->
 		</div>
-
-		<script>
-			$(function() {
-    			var header = $(".header");
-    			$(window).scroll(function() {    
-        			var scroll = $(window).scrollTop();
-        			if (scroll >= 70) {
-            			header.addClass("scrolled");
-        		}   else {
-        				header.removeClass("scrolled");
-            	}
-    		});
-
-			});
-		</script>
 
 		<!-- ################### HEADER ENDS ##################-->
 
         
-        <div style = "padding-bottom:70px"></div>
-		<div class ="big-image">
+        <div class="cover-photo-div">
 			<a href="#">
-				<img src="TwitchCoverPGH.jpg" alt="My Sample Image" width="1024" height="300">
+				<img class="cover-photo" src="TwitchCoverPGH.jpg" alt="Cover Photo">
 			</a>
 		</div>
 		
@@ -84,6 +75,7 @@
               <h2>Streaming Schedule</h2>
                 
                 Coming soon!
+                
             </div>  
                   
                   </div>
@@ -111,16 +103,16 @@
               <h2>Tournament Schedule</h2>
                 <div class="t-schedule">
                 <ul>
-                    <li>Montreal Chessbrahs - January 8th - 2:40 PM PST</li>
-                    <li>New York Marshalls - January 15th - 2:20 PM PST</li>
-                    <li>Montclair Sopranos - January 22nd - 2:20 PM PST</li>
-                    <li>Battle Royale #1 - January 29th - 6:00 PM PST</li>
-                    <li>London Lions - February 6th - 1:30 PM PST</li>
-                    <li>Miami Champions - February 12th - 2:20 PM PST</li>
-                    <li>Battle Royale #2 - February 21st - 7:00 AM PST</li>
-                    <li>Saint Louis ArchBishops - February 26th - 2:40 PM PST</li>
-                    <li>Webster Windmills - March 6th - 2:40 PM PST</li>
-                    <li>Battle Royale #3 - March 12th - 1:30 PM PST</li>
+                    <li>Montreal Chessbrahs - January 8th - 5:40 PM EST</li>
+                    <li>New York Marshalls - January 15th - 5:20 PM EST</li>
+                    <li>Montclair Sopranos - January 22nd - 5:20 PM EST</li>
+                    <li>Battle Royale #1 - January 29th - 9:00 PM EST</li>
+                    <li>London Lions - February 6th - 4:30 PM EST</li>
+                    <li>Miami Champions - February 12th - 5:20 PM EST</li>
+                    <li>Battle Royale #2 - February 21st - 10:00 AM EST</li>
+                    <li>Saint Louis ArchBishops - February 26th - 2:40 PM EST</li>
+                    <li>Webster Windmills - March 6th - 5:40 PM EST</li>
+                    <li>Battle Royale #3 - March 12th - 4:30 PM EST</li>
                 </ul>
                 </div>
             </div>
