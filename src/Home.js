@@ -1,9 +1,24 @@
 import React, { Component } from 'react';
-import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
+import TwitchIframe from './TwitchIframe'
 import './App.css';
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { 
+      // use twitch api here?
+      twitchLinks: [{
+        id: "325260286",
+        title: "Nathan makes an easy win much more exciting!"
+      }, {
+        id: "325260287", 
+        title: "Nathan Forgets his Grob theory!"
+      }]
+    };
+    // this.handleClick = this.handleClick.bind(this);
+  }
   render() {
     return (
       <div className="home">
@@ -35,12 +50,7 @@ class Home extends Component {
         <div className="pad"></div>
 
         <div className="row"> 
-          <div className="column">
-            <iframe src="https://player.twitch.tv/?autoplay=false&video=v325260286" frameborder="0" allowfullscreen="true" scrolling="no" height="300" width="500"></iframe><a className="twitch-desc" href="https://www.twitch.tv/videos/325260286?tt_content=text_link&tt_medium=vod_embed" /><span>Watch Highlight: Pawngrabbers.TV: Nathan makes an easy win much more exciting! from pghpawngrabbers on www.twitch.tv</span>
-          </div>
-          <div className="column">
-            <iframe src="https://player.twitch.tv/?autoplay=false&video=v325260287" frameborder="0" allowfullscreen="true" scrolling="no" height="300" width="500"></iframe><a className="twitch-desc" href="https://www.twitch.tv/videos/325260287?tt_content=text_link&tt_medium=vod_embed" /><span>Watch Highlight: Pawngrabbers.TV: Nathan Forgets his Grob theory! from pghpawngrabbers on www.twitch.tv</span>
-          </div>
+          {this.state.twitchLinks.map((video) => (<TwitchIframe video={video}/>))}
         </div>
 
         <div className="stats">
