@@ -9,47 +9,65 @@ import Blog from './Blog';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      showMenu: false
+    }
+  }
+
   render() {
     return (
       <Router>
         <div>
           <div className="container">
-            <div className="header">
-              <div className="title-div">
-                <div id="top-logo">
-                  <a href="/"><img src={require('./images/pawngrabbers_main.png')} width="50" height="50" /></a>
+            <div>
+              <div className="header">
+                <div className="title-div">
+                  <div id="top-logo">
+                    <a href="/"><img src={require('./images/pawngrabbers_main.png')} width="50" height="50" /></a>
+                  </div>
+                  <div id="title-text">Pittsburgh Pawngrabbers</div>
                 </div>
-                <div id="title-text">Pittsburgh Pawngrabbers</div>
+                <nav id="nav-bar">
+                  <ul>
+                    <li>
+                      {/* <Link to="/bio">Bio</Link> */}
+                      <div class="dropdown">
+                        <button class="dropbtn"><Link to="/">Home</Link></button>
+                        <div class="dropdown-content" >
+                          <Link to="/bio">Bios</Link>
+                          <Link to="#">Sponsors</Link>
+                          <Link to="#">IM Streamer</Link>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <Link to="/stream">Stream</Link>
+                    </li>
+                    <li>
+                      <Link to="/blog">Blog</Link>
+                    </li>
+                    <li>
+                      <a href="https://shop.spreadshirt.com/pghpawngrabbers" target="_blank">Shop</a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
-              <nav id="nav-bar">
-                <ul>
-                  <li>
-                    <Link to="/bio">Bio</Link>
-                  </li>
-                  <li>
-                    <Link to="/stream">Stream</Link>
-                  </li>
-                  <li>
-                    <Link to="/blog">Blog</Link>
-                  </li>
-                  <li>
-                    <a href="https://shop.spreadshirt.com/pghpawngrabbers" target="_blank">Shop</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div className="cover-photo-div">
-              <a href="#"> <img className="cover-photo" src={require("./images/TwitchCoverPGH.jpg")} alt="Cover Photo" /> </a>
+              <div className="cover-photo-div">
+                <a href="#"> <img className="cover-photo" src={require("./images/TwitchCoverPGH.jpg")} alt="Cover Photo" /> </a>
+              </div>
             </div>
 
             <hr></hr>
-          
-            <Route path="/" exact component={() => (<Home />)} />
+
+            <Route path="/" exact component={() => (<Home style={{ zIndex: -100 }}/>)} />
             <Route path="/bio" component={() => (<Bio />)} />
             <Route path="/stream" component={() => (<Stream />)} />
             <Route path="/blog" component={() => (<Blog />)} />
           </div>
-          
+
           <div className="fixed">
             <div className="socialmedia">
 
